@@ -1,0 +1,56 @@
+Arguments: 
+  /usr/bin/node /usr/share/yarn/bin/yarn.js dev
+
+PATH: 
+  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  14.4.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/lucas/Área de Trabalho/DashClean/api/package.json: Unexpected token } in JSON at position 240
+      at JSON.parse (<anonymous>)
+      at /usr/share/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/share/yarn/lib/cli.js:310:30)
+      at /usr/share/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "backend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "dev":"nodemon src/server.js",
+      "start": "node src/server.js",
+      
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "cors": "^2.8.5",
+      "express": "^4.17.1",
+      "mysql2": "^2.1.0",
+      "nodemon": "^2.0.4",
+      "sequelize": "^6.3.3",
+      "yarn": "^1.22.4"
+    },
+    "devDependencies": {
+      "sequelize-cli": "^6.2.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
