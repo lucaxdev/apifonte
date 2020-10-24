@@ -4,7 +4,7 @@ class frequencia extends Model {
     static init(sequelize) {
         super.init({
 
-            name: DataTypes.STRING,
+            nome: DataTypes.STRING,
             id_voluntario: DataTypes.STRING,
             nome:DataTypes.STRING,
             ponte:DataTypes.STRING,
