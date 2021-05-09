@@ -1,8 +1,9 @@
 module.exports = {
     dialect: 'mysql',
-    host:'localhost',
-    username: 'root',
-    password:'Lucas180699',
+    host:'mysql743.umbler.com',
+    username: 'fonteadm',
+    port:'41890',
+    password:'fonte123',
     database: 'fonte',
     define:{
         timestamps: true,
