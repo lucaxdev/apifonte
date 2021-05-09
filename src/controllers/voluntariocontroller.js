@@ -8,10 +8,10 @@ module.exports = {
     },
 
     async store(req, res) {
-        const { nome, ponte, aniversario, telefone, faltas } = req.body;
+        const {nome,email,ponte,geracao,discipulador,endereco,data_nasc,numero,esc_lider} = req.body;
 
 
-        const user = await User.create({  nome, ponte, aniversario, telefone, faltas });
+        const user = await User.create({nome,email,ponte,geracao,discipulador,endereco,data_nasc,numero,esc_lider});
 
         return res.json(user);
     },

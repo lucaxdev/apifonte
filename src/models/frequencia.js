@@ -8,8 +8,8 @@ class frequencia extends Model {
             id_voluntario: DataTypes.STRING,
             nome:DataTypes.STRING,
             ponte:DataTypes.STRING,
-            servindo:DataTypes.STRING
-
+            servindo:DataTypes.STRING,
+            data:DataTypes.STRING,
         }, {
             sequelize,
             freezeTableName: true

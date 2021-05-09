@@ -14,11 +14,11 @@ module.exports = {
              
       },
       id_voluntario: {
-        type: Sequelize.STRING(50),
+        type: Sequelize.STRING,
         allowNull: false,
       },
       nome: {
-        type: Sequelize.STRING(25),
+        type: Sequelize.STRING,
         allowNull: true,
       },
       ponte: {
@@ -26,7 +26,11 @@ module.exports = {
         allowNull: false
       },
       servindo: {
-        type: Sequelize.STRING(15),
+        type: Sequelize.STRING,
+        allowNull: false
+      },
+      data: {
+        type: Sequelize.STRING,
         allowNull: false
       },
       created_at:{

@@ -11,23 +11,39 @@ module.exports = {
       },
       
       nome: {
-        type: Sequelize.STRING(50),
-        allowNull: false,
-      },
-      ponte: {
-        type: Sequelize.STRING(25),
+        type: Sequelize.STRING,
         allowNull: true,
       },
-      aniversario: {
+      email: {
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: true,
       },
-      telefone: {
-        type: Sequelize.STRING(15),
-        allowNull: false
+      ponte: {
+        type: Sequelize.STRING,
+        allowNull: true
       },
-      faltas: {
-        type: Sequelize.STRING(30),
+      geracao: {
+        type: Sequelize.STRING,
+        allowNull: true
+      },
+      discipulador: {
+        type: Sequelize.STRING,
+        allowNull: true
+      },
+      endereco: {
+        type: Sequelize.STRING,
+        allowNull: true
+      },
+      data_nasc: {
+        type: Sequelize.STRING,
+        allowNull: true
+      },
+      numero: {
+        type: Sequelize.STRING,
+        allowNull: true
+      },
+      esc_lider: {
+        type: Sequelize.STRING,
         allowNull: true
       },
       created_at:{
@@ -43,6 +59,6 @@ module.exports = {
   },
 
   down: async (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('users');
+    return queryInterface.dropTable('voluntarios');
   }
 };

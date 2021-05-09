@@ -11,10 +11,10 @@ module.exports = {
     },
 
     async store(req, res) {
-        const { id_voluntario,nome,ponte,servindo } = req.body;
+        const { id_voluntario,nome,ponte,servindo,data } = req.body;
 
 
-        const catalog = await frequencia.create({ id_voluntario,nome,ponte,servindo });
+        const catalog = await frequencia.create({ id_voluntario,nome,ponte,servindo,data });
 
         return res.json(catalog);
     },

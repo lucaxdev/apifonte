@@ -1,13 +1,11 @@
 module.exports = {
     dialect: 'mysql',
-    host:'mysql669.umbler.com',
-    port:'41890',
-    username: 'fnt_bd',
-    password:'fonte1212',
-    database: 'fonte_bd',
+    host:'localhost',
+    username: 'root',
+    password:'Lucas180699',
+    database: 'fonte',
     define:{
         timestamps: true,
         underscored:true,
     },
-
 };
